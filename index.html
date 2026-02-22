@@ -1,57 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Typing Speed Test</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Frontend Mentor | Typing Speed Test</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="site-info">
+        <img src="./assets/images/logo-large.svg" alt="site logo" />
+      </div>
 
-  Personal best: <!-- PB --> WPM
+      <div class="personal-data">
+        <img src="./assets/images/icon-personal-best.svg" alt="trophy image" />
+        <p>Personal best: <span></span>WPM</p>
+      </div>
+    </header>
+    <div class="stats">
+      <p>WPM:<span></span></p>
+      <p>Accuracy:<span></span></p>
+      <p>Time:<span></span></p>
+    </div>
+    <div class="difficulty">
+      <p>Difficulty:</p>
+      <button id="easy">Easy</button><button id="medium">Medium</button
+      ><button id="hard">Hard</button>
+    </div>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+    <div class="mode">
+      <p>Mode:</p>
+      <button>Timed (60s)</button>
+      <button>Passage</button>
+    </div>
+    <!-- Passage -->
+    <div class="user-choice">
+      <button id="start-btn">Start Typing Test</button>
+      <p class="hint">Or click the text and start typing</p>
+    </div>
+    <!-- Test Complete Start -->
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
+    <div class="test-complete">
+      <img src="./assets/images/icon-completed.svg" alt="test completed" />
+      <h2>Test Complete!</h2>
+      <p>Solid run. Keep pushing to beat your high score.</p>
+      <div class="test-stats">
+        <div class="wpm">
+          <p>WPM:</p>
+          <span id="wpm-stat"></span>
+        </div>
+        <div class="accuracy">
+          <p>Accuracy:</p>
+          <span id="accuracy-stat"></span>
+        </div>
+        <div class="chars">
+          <p>Characters:</p>
+          <span id="char-stat"></span>
+        </div>
+      </div>
+      <button id="try-again-btn">
+        Go Again
+        <img src="./assets/images/icon-restart.svg" alt="retry button" />
+      </button>
+    </div>
 
-  Mode:
-  Timed (60s)
-  Passage
-
-  <!-- Passage -->
-
-  Start Typing Test
-  Or click the text and start typing
-
-  <!-- Test Complete Start -->
-
-  Test Complete!
-  Solid run. Keep pushing to beat your high score.
-
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
-
-  Go Again
-  
-  <!-- Test Complete End -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Mohamed Ibrahim</a>.
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
