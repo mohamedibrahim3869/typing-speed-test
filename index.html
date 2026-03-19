@@ -29,6 +29,7 @@
     <header>
       <div class="site-info">
         <img src="./assets/images/logo-large.svg" alt="site logo" />
+        <p class="site-head">Typing Speed Test</p>
       </div>
 
       <div class="personal-data">
@@ -36,26 +37,32 @@
         <p>Personal best: <span></span>WPM</p>
       </div>
     </header>
-    <div class="stats">
-      <p>WPM:<span></span></p>
-      <p>Accuracy:<span></span></p>
-      <p>Time:<span></span></p>
-    </div>
-    <div class="difficulty">
-      <p>Difficulty:</p>
-      <button id="easy">Easy</button><button id="medium">Medium</button
-      ><button id="hard">Hard</button>
-    </div>
+    <div class="test-options">
+      <div class="stats">
+        <p>WPM:<span></span></p>
+        <p>Accuracy:<span></span></p>
+        <p>Time:<span></span></p>
+      </div>
+      <div class="difficulty">
+        <p>Difficulty:</p>
+        <button id="easy">Easy</button><button id="medium">Medium</button
+        ><button id="hard">Hard</button>
+      </div>
 
-    <div class="mode">
-      <p>Mode:</p>
-      <button>Timed (60s)</button>
-      <button>Passage</button>
+      <div class="mode">
+        <p>Mode:</p>
+        <button>Timed (60s)</button>
+        <button>Passage</button>
+      </div>
     </div>
     <!-- Passage -->
     <div class="user-choice">
       <button id="start-btn">Start Typing Test</button>
       <p class="hint">Or click the text and start typing</p>
+    </div>
+
+    <div class="user-input">
+      <textarea><span class="imported-data"></span></textarea>
     </div>
     <!-- Test Complete Start -->
 
